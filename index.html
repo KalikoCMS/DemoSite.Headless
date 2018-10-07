@@ -9,6 +9,8 @@
         h1 { font-size: 40px; font-weight: 300; }
         .content { max-width: 960px; margin: 0 auto;}
         .preamble { font-size: 20px;}
+        code { background: #333; color: #fff; padding: 10px; margin: 10px 0; display: inline-block; border-radius: 5px; }
+        code:before { content: "c:\\projects\\react-app\\> "; color: #999;}
     </style>
 </head>
 <body>
@@ -22,13 +24,13 @@
         <p>Start the project and access the React application by going to <a href="react-app/build/index.html">/react-app/build/index.html</a>.</p>
         <h2>For more information</h2>
         <p>Find more information about this <a href="https://github.com/KalikoCMS/DemoSite.Headless">demo project over at GitHub</a>.</p>
-        <p>Find more information about <a href="https://kaliko.com/cms/get-started/use-as-a-headless-cms">how to use Kaliko CMS as a headless CMS here</a>.</p>
+        <p>Find more information about <a href="https://kaliko.com/cms/get-started/use-as-a-headless-cms/">how to use Kaliko CMS as a headless CMS here</a>.</p>
         <p>If you have any questions, please post in the <a href="https://kaliko.com/cms/forum/">support forum</a>.</p>
         <h2>Access admin for this demo project</h2>
         <p>You need to create a user before accessing the administration interface. This is done by opening <i>SetupAdminAccount.aspx</i> in the project root and follow the instructions given there.</p>
-        <p>Once the user has been created, go to <a href="admin/">/admin/</a></p>
+        <p>Once the user has been created, go to <a href="admin/">/admin/</a>.</p>
         <h2>React source code</h2>
-        <p>You'll find the source code for the React application in the <i>\react-app\src\</i>-folder of this project</p>
+        <p>You'll find the source code for the React application in the <i>\react-app\src\</i>-folder of this project. The requests are being made using axios in the HomePage component (located in the <i>features\home\</i>-folder).</p>
         <p>To start the React development server by - standing in the <i>\react-app\</i>-folder - run:<br /><code>npm start</code></p>
         <h2>Exploring the content API</h2>
         <p><strong>Get all page types</strong><br /><a href="/contentapi/v1.0/pagetype/all">/contentapi/v1.0/pagetype/all</a></p>

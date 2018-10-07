@@ -355,6 +355,7 @@
     <Content Include="react-app\npm-shrinkwrap.json" />
     <Content Include="react-app\package.json" />
     <Content Include="react-app\public\manifest.json" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
