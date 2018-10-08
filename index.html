@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Headless demo using React and Kaliko CMS</title>
+    <style>
+        body { background-color: #f4f4f4; color: #333333; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        h1 { font-size: 40px; font-weight: 300; }
+        .content { max-width: 960px; margin: 0 auto;}
+        .preamble { font-size: 20px;}
+        code { background: #333; color: #fff; padding: 10px; margin: 10px 0; display: inline-block; border-radius: 5px; }
+        code:before { content: "c:\\projects\\react-app\\> "; color: #999;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Headless demo using React and Kaliko CMS</h1>
+        <p class="preamble">
+            This demo project includes both a sample installation of Kaliko CMS as well as a small React application that consumes content through the content API.
+            The main purpose is to show how to fetch content from a decoupled application.
+        </p>
+        <p>The React application loads and renders CMS content from the start page as well as all articles published under the start page.</p>
+        <p>Start the project and access the React application by going to <a href="react-app/build/index.html">/react-app/build/index.html</a>.</p>
+        <h2>For more information</h2>
+        <p>Find more information about this <a href="https://github.com/KalikoCMS/DemoSite.Headless">demo project over at GitHub</a>.</p>
+        <p>Find more information about <a href="https://kaliko.com/cms/get-started/use-as-a-headless-cms/">how to use Kaliko CMS as a headless CMS here</a>.</p>
+        <p>If you have any questions, please post in the <a href="https://kaliko.com/cms/forum/">support forum</a>.</p>
+        <h2>Access admin for this demo project</h2>
+        <p>You need to create a user before accessing the administration interface. This is done by opening <i>SetupAdminAccount.aspx</i> in the project root and follow the instructions given there.</p>
+        <p>Once the user has been created, go to <a href="admin/">/admin/</a>.</p>
+        <h2>React source code</h2>
+        <p>You'll find the source code for the React application in the <i>\react-app\src\</i>-folder of this project. The requests are being made using axios in the HomePage component (located in the <i>features\home\</i>-folder).</p>
+        <p>To start the React development server by - standing in the <i>\react-app\</i>-folder - run:<br /><code>npm start</code></p>
+        <h2>Exploring the content API</h2>
+        <p><strong>Get all page types</strong><br /><a href="/contentapi/v1.0/pagetype/all">/contentapi/v1.0/pagetype/all</a></p>
+        <p><strong>Get all article pages</strong><br /><a href="/contentapi/v1.0/pagetype/1/pages">/contentapi/v1.0/pagetype/1/pages</a></p>
+        <p><strong>Get the start page</strong><br /><a href="/contentapi/v1.0/page/startpage">/contentapi/v1.0/page/startpage</a></p>
+        <p><strong>Get the start page by ID</strong><br /><a href="/contentapi/v1.0/page/b992ff25-c4bf-47c8-8ba0-f144e8f4c5b8">/contentapi/v1.0/page/{id}</a></p>
+        <p><strong>Get all children of the start page</strong><br /><a href="/contentapi/v1.0/page/b992ff25-c4bf-47c8-8ba0-f144e8f4c5b8/children">/contentapi/v1.0/page/{id}/children</a></p>
+    </div>
+<p></p>
+</body>
+</html>
